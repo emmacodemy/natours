@@ -15,7 +15,7 @@ const bookingBtn = document.querySelector('#book-tour');
 const body = document.querySelector('body');
 
 if (body.dataset.alert) {
-  showAlert('success', body.dataset.alert);
+  showAlert('success', body.dataset.alert, 15);
 }
 
 if (mapbox) {
