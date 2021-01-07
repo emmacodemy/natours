@@ -31,7 +31,6 @@ export const logout = async () => {
       method: 'GET',
       url: '/api/v1/users/logout',
     });
-    console.log(res);
     if (res.data.status === 'success') location.reload(true);
   } catch (error) {
     showAlert('error', 'Error logging out! Try again');

@@ -80,7 +80,6 @@ module.exports = (err, req, res, next) => {
   if (process.env.NODE_ENV === 'development') {
     sendErrorDev(err, req, res);
   } else if (process.env.NODE_ENV === 'production') {
-    console.log(err.message);
     let error = { ...err, message: err.message };
 
     if (err instanceof mongoose.Error.CastError)
